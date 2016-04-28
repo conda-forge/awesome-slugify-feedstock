@@ -5,7 +5,7 @@ Home: https://github.com/dimka665/awesome-slugify
 
 Package license: GPL-3.0
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Python flexible slugify function
 
