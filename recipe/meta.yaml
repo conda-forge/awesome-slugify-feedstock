@@ -4,13 +4,13 @@ package:
 
 source:
     fn: awesome-slugify-1.6.5.tar.gz
-    url: https://pypi.python.org/packages/source/a/awesome-slugify/awesome-slugify-1.6.5.tar.gz
-    md5: 58b9b751b4670e3c221f008dd61348a8
+    url: https://pypi.io/packages/source/a/awesome-slugify/awesome-slugify-1.6.5.tar.gz
+    sha256: bbdec3fa2187917473a2efad092b57f7125a55f841a7cf6a1773178d32ccfd71
     patches:
         - utf8.patch  # [win]
 
 build:
-    number: 0
+    number: 1
     script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -29,7 +29,11 @@ test:
 about:
     home: https://github.com/dimka665/awesome-slugify
     license: GPL-3.0
+    license_family: GPL
+    # license_file: No license file!
     summary: Python flexible slugify function
+    dev_url: https://github.com/dimka665/awesome-slugify
+    doc_url: https://github.com/dimka665/awesome-slugify
 
 
 extra:
