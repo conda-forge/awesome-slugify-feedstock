@@ -1,42 +1,42 @@
+{% set version = "1.6.5" %}
 package:
-    name: awesome-slugify
-    version: 1.6.5
+  name: awesome-slugify
+  version: {{ version }}
 
 source:
-    fn: awesome-slugify-1.6.5.tar.gz
-    url: https://pypi.io/packages/source/a/awesome-slugify/awesome-slugify-1.6.5.tar.gz
-    sha256: bbdec3fa2187917473a2efad092b57f7125a55f841a7cf6a1773178d32ccfd71
-    patches:
-        - utf8.patch  # [win]
+  url: https://pypi.io/packages/source/a/awesome-slugify/awesome-slugify-{{ version }}.tar.gz
+  sha256: bbdec3fa2187917473a2efad092b57f7125a55f841a7cf6a1773178d32ccfd71
+  patches:
+    - utf8.patch  # [win]
 
 build:
-    number: 1
-    script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 2
+  noarch: python
+  script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
-    build:
-        - python
-        - setuptools
-    run:
-        - python
-        - regex
-        - unidecode >=0.04.14,<0.05
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - regex
+    - unidecode >=0.04.14,<0.05
 
 test:
-    imports:
-        - slugify
+  imports:
+    - slugify
 
 about:
-    home: https://github.com/dimka665/awesome-slugify
-    license: GPL-3.0
-    license_family: GPL
-    # license_file: No license file!
-    summary: Python flexible slugify function
-    dev_url: https://github.com/dimka665/awesome-slugify
-    doc_url: https://github.com/dimka665/awesome-slugify
-
+  home: https://github.com/dimka665/awesome-slugify
+  license: GPL-3.0
+  license_family: GPL
+  # license_file: No license file!
+  summary: Python flexible slugify function
+  dev_url: https://github.com/dimka665/awesome-slugify
+  doc_url: https://github.com/dimka665/awesome-slugify
 
 extra:
-    recipe-maintainers:
-        - ocefpaf
-        - kwilcox
+  recipe-maintainers:
+    - kwilcox
+    - ocefpaf
