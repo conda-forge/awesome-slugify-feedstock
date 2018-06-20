@@ -14,12 +14,15 @@ Summary: Python flexible slugify function
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/awesome-slugify-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/awesome-slugify-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/awesome-slugify-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/awesome-slugify-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/awesome-slugify/badges/version.svg)](https://anaconda.org/conda-forge/awesome-slugify)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/awesome-slugify/badges/downloads.svg)](https://anaconda.org/conda-forge/awesome-slugify)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-awesome--slugify-green.svg)](https://anaconda.org/conda-forge/awesome-slugify) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/awesome-slugify.svg)](https://anaconda.org/conda-forge/awesome-slugify) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/awesome-slugify.svg)](https://anaconda.org/conda-forge/awesome-slugify) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/awesome-slugify.svg)](https://anaconda.org/conda-forge/awesome-slugify) |
 
 Installing awesome-slugify
 ==========================
@@ -64,6 +67,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
