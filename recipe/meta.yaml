@@ -11,7 +11,7 @@ source:
     - utf8.patch  # [win]
 
 build:
-  number: 4
+  number: 5
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
@@ -22,7 +22,7 @@ requirements:
   run:
     - python
     - regex
-    - unidecode >=0.04.14,<0.05
+    - unidecode >=1.1.1,<2.0
 
 test:
   imports:
