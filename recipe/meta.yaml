@@ -22,7 +22,7 @@ requirements:
   run:
     - python
     - regex
-    - unidecode >=0.04.14,<0.05
+    - unidecode >=1.1.1,<2.0
 
 test:
   imports:
