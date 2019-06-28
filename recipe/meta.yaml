@@ -11,7 +11,7 @@ source:
     - utf8.patch  # [win]
 
 build:
-  number: 3
+  number: 4
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
